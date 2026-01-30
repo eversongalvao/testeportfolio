@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+padding: 0;
+margin: 0;
+/*font-size: 16px;*/
+line-height: 1.5rem;
+color: #0b0b08;
+}
+
+body {
+font-family: 'Courier', Courier, monospace;
+background-image: url('paperbg.png');
+padding: 20px;
+}
+
+.title {
+width: 100%;
+background-color: #151515;
+background-image: url('paperbg-dark.jpg');
+padding: 60px;
+text-align: center;
+font-family: Helvetica;
+font-weight: bold;
+color: antiquewhite;
+font-size: 60px;
+}
+
+.navbar {
+    background-color: #FDFFF7;
+    overflow: hidden;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    padding: 10px 70px;
+    color: #2f2d2d;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.navbar a:hover {
+  color: #2f2d2d;
+  background-color: lightgreen;
+}
+
+.navbar a:active {
+  color: blue;
+  background-color: hotpink;
+}
+
+main {
+background: #FDFFF7;
+flex: 1;
+padding: 20;
+}
+
+h1, h2, h3, h4, h5, h6 {
+margin: 16px;
+padding: 0;
+overflow-wrap: break-word;
+font-weight: normal;
+}
+
+h1 { 
+    font-size: 1.5rem; 
+    font-family: Helvetica;
+    padding: 0.5%;
+}
+
+h2 { font-size: 3rem; }
+h3 { font-size: 2rem; }
+h4 { font-size 1.5rem; }
+p { 
+    font-size: 1rem; 
+    font-family: 'Courier', Courier, monospace;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.container {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-flow: column;
+margin: auto;
+padding: 60px;
+}
+
+footer {
+background-color: #FDFFF7;
+width: 100%;
+height: 25px;
+text-align: center;
+}
+
+h1, h2, h3 {
+    color: wheat;
+    background-color: #0b0b08;
+    width: fit-content;
+}
+
+ .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 2px;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 2px;
+}
+
+/* colunas iguais */
+.column img {
+  margin-top: 4px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* responsividade */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* mais responsividade */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.text-container {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #fbfcf8;
+}
